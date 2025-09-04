@@ -37,6 +37,7 @@ module holes(){
 module rib(){
     module plate(){
     difference(){
+        scale([1,1,3])
     base();
     holes();
     }
@@ -46,7 +47,7 @@ difference(){
     translate([0,0,-2.8])
     plate();
     translate([0,0,-6])
-    scale([0.8,0.95,3])
+    scale([0.8,0.95,10])
     rez();
 }
 }
