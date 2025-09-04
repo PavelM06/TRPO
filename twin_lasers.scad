@@ -1,4 +1,4 @@
-$fn = 64;
+$fn = 100;
 plate_depth = 2.8;
 plate_length = 120;
 plate_width = 33;
@@ -14,6 +14,8 @@ module base(){
     translate([0,plate_length/2,0])
     cylinder (h=plate_depth,d=plate_width,center=true);
 }
+
+
 module rez(){
     color("red")
     cube([plate_width,plate_length,plate_depth],center=true);
@@ -32,7 +34,8 @@ module holes(){
     translate([0,plate_length/2,0])
     cylinder(h=40,d=6.5,center=true);
 }
-module plate(){
+module rib(){
+    module plate(){
     difference(){
     base();
     holes();
@@ -42,7 +45,9 @@ difference(){
     scale([1,1,2])
     translate([0,0,-2.8])
     plate();
-    translate([0,0,-10])
-    scale([0.8,0.95,2])
+    translate([0,0,-6])
+    scale([0.8,0.95,3])
     rez();
 }
+}
+rib();
