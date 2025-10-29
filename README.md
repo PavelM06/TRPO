@@ -1,5 +1,5 @@
-#Работа Макарова Павла
-#Проект "Лазерная установка двойного наведения" на языке OpenScad
+# Работа Макарова Павла
+# Проект "Лазерная установка двойного наведения" на языке OpenScad
 
 ![Model in OpenScad plate for twin lasers]
 (images/plate_twin_lasers.png)
@@ -16,3 +16,4 @@
 
 #Фотографии установки
 ![Model in OpenScad plate for twin lasers](images/plate_twin_lasers.png)
+
