@@ -1,10 +1,13 @@
+use <smartphone.scad>
 echo ("Работа Макарова Павла");
 $fn=200;
 
 
-ocular();
-translate([0,0,35/2+5/2])
-top();
+//ocular();
+//translate([0,0,35/2+5/2])
+//top();
+smartphone();
+
 
 module top (){
     difference(){
