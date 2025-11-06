@@ -7,7 +7,17 @@ $fn=200;
 //translate([0,0,35/2+5/2])
 //top();
 smartphone();
+color("red")
+translate([-60,23,-4])
+camera();
 
+module camera(){
+cylinder(d=11.9,center=true);
+translate([12.8,0,0])
+cylinder(d=11.9,center=true);
+translate([6,0,0])
+cube([13,11.9,1],center=true);
+}
 
 module top (){
     difference(){
