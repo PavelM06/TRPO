@@ -3,20 +3,17 @@ echo ("Работа Макарова Павла");
 $fn=200;
 
 
-//ocular();
-//translate([0,0,35/2+5/2])
-//top();
+translate([-61, 23, -29])
+color("blue")
+ocular();
+
+
+difference(){
 smartphone();
 color("red")
-translate([-60,23,-4])
+scale([1,1,2])
+translate([-60,23,-3])
 camera();
-
-module camera(){
-cylinder(d=11.9,center=true);
-translate([12.8,0,0])
-cylinder(d=11.9,center=true);
-translate([6,0,0])
-cube([13,11.9,1],center=true);
 }
 
 module top (){
@@ -28,6 +25,8 @@ module top (){
 
 
 module ocular(){
+    translate([0,0,35/2+5/2])
+    top();
     difference(){
         cylinder(d=23-0.5, h=35, center=true);
         cylinder(d=23-0.5-3, h=40, center=true);
